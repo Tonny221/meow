@@ -1,12 +1,13 @@
+import Link from "next/link"
+
 const Aside = () => {
   return (
     <aside>
         <menu>
-            <ul>
-                <li>Home</li>
-                <li>Favourites</li>
-                <li>Profile</li>
-                <li></li>
+            <ul className="flex flex-col">
+                <Link href={'/'}>Home</Link>
+                <Link href={'/favourites'}>Favourites</Link>
+                <Link href={'/profile'}>Profile</Link>
             </ul>
         </menu>
     </aside>
